@@ -1,0 +1,28 @@
+.css-grwn97-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  color: #e85a2c !important;
+}
+
+.css-grwn97-MuiButtonBase-root-MuiTab-root:hover {
+  transition: transform 250ms ease-in !important;
+}
+
+.MuiTabs-indicator {
+  display: none;
+}
+input:focus {
+  outline: none;
+}
+input::placeholder {
+  color: #fff;
+}
+
+* {
+  scroll-padding-top: 200px;
+}
+
+.ordernow {
+  font-family: Chivo;
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+}
