@@ -7,7 +7,7 @@ import Music from "../../Assets/Icons/music.png";
 import Halal from "../../Assets/halalsticker.png";
 
 const timings = [
-  { day: "Monday", opening: "12:00 PM", closing: "12:00 AM" },
+  { day: "Monday", opening: "4:00 PM", closing: "12:00 AM" },
   { day: "Tuesday", opening: "4:00 PM", closing: "12:00 AM" },
   { day: "Wednesday", opening: "12:00 PM", closing: "12:00 AM" },
   { day: "Thursday", opening: "12:00 PM", closing: "12:00 AM" },

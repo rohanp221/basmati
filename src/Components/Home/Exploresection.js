@@ -3,19 +3,19 @@ import React, { useState } from "react";
 import MenusectionBgImg from "../../Assets/sectionbg.png";
 import Appetizers from "../../Assets/Icons/Appetizer.png";
 import Tandoori from "../../Assets/Icons/tandoori.png";
-import Soup from "../../Assets/Icons/soup.png";
 import Curries from "../../Assets/Icons/curries.png";
 import Chinese from "../../Assets/Icons/chinese.png";
 import Biryani from "../../Assets/Icons/biryani.png";
-import Desert from "../../Assets/Icons/deserts.png";
+import Sweets from "../../Assets/Icons/Sweets.png";
+import Street from "../../Assets/Icons/Street.png";
+import Chat from "../../Assets/Icons/Chaat.png";
 import PropTypes from "prop-types";
 import { Stack } from "@mui/system";
 import Appetizertabdishes from "./Appetizertabdishes";
-import Soupsreceipes from "./Soupsreceipes";
 import Biryanireceipes from "./Biryanireceipes";
 import Curriesreceipes from "./Curriesreceipes";
 import Chinesereceipes from "./Chinesereceipes";
-import Deserstsreceipes from "./Deserstsreceipes";
+import Deserstsreceipes from "./Sweets";
 import ingredient1 from "../../Assets/ingredient1.png";
 import ingredient2 from "../../Assets/ingredient2.png";
 import ingredient3 from "../../Assets/ingredient3.png";
@@ -23,43 +23,50 @@ import ingredient4 from "../../Assets/ingredient4.png";
 import ingredient5 from "../../Assets/ingredient5.png";
 import ingredient6 from "../../Assets/ingredient6.png";
 import Tandoorireceipes from "./tandoorireceipes";
+import Chatreceipe from "./Chatreceipe";
+import StreetSplashDishes from "./StreetSplashDishes";
 
 const Tabstitles = [
   {
     id: 0,
-    img: Soup,
-    Title: "Soups",
+    img: Appetizers,
+    Title: "Appetizers"
   },
   {
     id: 1,
-    img: Appetizers,
-    Title: "Appetizers",
+    img: Tandoori,
+    Title: "Tandooris"
   },
   {
     id: 2,
-    img: Biryani,
-    Title: "Biryanis",
+    img: Curries,
+    Title: "Curries"
   },
   {
     id: 3,
-    img: Tandoori,
-    Title: "Tandooris",
+    img: Biryani,
+    Title: "Biryanis"
   },
   {
     id: 4,
-    img: Curries,
-    Title: "Curries",
+    img: Chinese,
+    Title: "Chinese"
   },
   {
     id: 5,
-    img: Chinese,
-    Title: "Chinese",
+    img: Chat,
+    Title: "Chat"
   },
   {
     id: 6,
-    img: Desert,
-    Title: "Deserts",
+    img: Street,
+    Title: "Street Splash"
   },
+  {
+    id: 7,
+    img: Sweets,
+    Title: "Sweets"
+  }
 ];
 
 function TabPanel(props) {
@@ -85,13 +92,13 @@ function TabPanel(props) {
 TabPanel.propTypes = {
   children: PropTypes.node,
   index: PropTypes.number.isRequired,
-  value: PropTypes.number.isRequired,
+  value: PropTypes.number.isRequired
 };
 
 function a11yProps(index) {
   return {
     id: `simple-tab-${index}`,
-    "aria-controls": `simple-tabpanel-${index}`,
+    "aria-controls": `simple-tabpanel-${index}`
   };
 }
 
@@ -109,14 +116,14 @@ const Exploresection = (props) => {
         backgroundRepeat: "no-repeat",
         backgroundSize: "100% 100%",
         height: "100%",
-        position: "relative",
+        position: "relative"
       }}
       id="menu"
     >
       <Container
         maxWidth={"lg"}
         sx={{
-          py: { xs: 8, sm: 15 },
+          py: { xs: 8, sm: 15 }
         }}
       >
         <Typography
@@ -127,7 +134,7 @@ const Exploresection = (props) => {
             fontFamily: "Chivo",
             fontSize: { xs: "16px", sm: "22px", md: "28px" },
             fontWeight: 600,
-            color: "#91999F",
+            color: "#91999F"
           }}
         >
           EXPLORE OUR MENU
@@ -140,14 +147,14 @@ const Exploresection = (props) => {
             fontFamily: "Merienda",
             fontSize: { xs: "24px", sm: "42px", md: "60px" },
             fontWeight: 700,
-            color: "#E85A2C",
+            color: "#E85A2C"
           }}
         >
           Try Our Specialities
         </Typography>
         <Tabs
           sx={{
-            mt: { xs: 2, sm: 5 },
+            mt: { xs: 2, sm: 5 }
           }}
           value={value}
           onChange={handleChange}
@@ -167,16 +174,22 @@ const Exploresection = (props) => {
                   <Box
                     sx={{
                       width: { xs: "30px", sm: "45px" },
-                      height: { xs: "30px", sm: "45px" },
+                      height: { xs: "30px", sm: "45px" }
                     }}
                   >
-                    <img src={item.img} alt="" width="100%" height="100%" />
+                    <img
+                      src={item.img}
+                      alt=""
+                      width="100%"
+                      height="100%"
+                      style={{ opacity: "0.5" }}
+                    />
                   </Box>
                   <Typography
                     sx={{
                       fontFamily: "Chivo",
                       fontSize: { xs: "14px", sm: "18px" },
-                      textTransform: "capitalize",
+                      textTransform: "capitalize"
                     }}
                   >
                     {item.Title}
@@ -188,24 +201,27 @@ const Exploresection = (props) => {
           ))}
         </Tabs>
         <TabPanel value={value} index={0}>
-          <Soupsreceipes />
-        </TabPanel>
-        <TabPanel value={value} index={1}>
           <Appetizertabdishes />
         </TabPanel>
-        <TabPanel value={value} index={2}>
-          <Biryanireceipes />
-        </TabPanel>
-        <TabPanel value={value} index={3}>
+        <TabPanel value={value} index={1}>
           <Tandoorireceipes />
         </TabPanel>
-        <TabPanel value={value} index={4}>
+        <TabPanel value={value} index={2}>
           <Curriesreceipes />
         </TabPanel>
-        <TabPanel value={value} index={5}>
+        <TabPanel value={value} index={3}>
+          <Biryanireceipes />
+        </TabPanel>
+        <TabPanel value={value} index={4}>
           <Chinesereceipes />
         </TabPanel>
+        <TabPanel value={value} index={5}>
+          <Chatreceipe />
+        </TabPanel>
         <TabPanel value={value} index={6}>
+          <StreetSplashDishes />
+        </TabPanel>
+        <TabPanel value={value} index={7}>
           <Deserstsreceipes />
         </TabPanel>
       </Container>
@@ -214,7 +230,7 @@ const Exploresection = (props) => {
           width: { xs: "80px", sm: "120px", md: "220px" },
           position: "absolute",
           left: 0,
-          top: "2%",
+          top: "2%"
         }}
       >
         <img src={ingredient1} alt="ingredient" width="100%" />
@@ -224,7 +240,7 @@ const Exploresection = (props) => {
           width: { xs: "80px", sm: "126px", md: "176px" },
           position: "absolute",
           right: 10,
-          top: "2%",
+          top: "2%"
         }}
       >
         <img src={ingredient2} alt="ingredient" width="100%" />
@@ -234,7 +250,7 @@ const Exploresection = (props) => {
           width: { xs: "80px", sm: "120px", md: "220px" },
           position: "absolute",
           left: 0,
-          bottom: { xs: -50, sm: -60, md: -110 },
+          bottom: { xs: -50, sm: -60, md: -110 }
         }}
       >
         <img src={ingredient3} alt="ingredient" width="100%" />
@@ -244,7 +260,7 @@ const Exploresection = (props) => {
           width: { xs: "80px", sm: "140px", md: "180px" },
           position: "absolute",
           right: 0,
-          bottom: "2%",
+          bottom: "2%"
         }}
       >
         <img src={ingredient4} alt="ingredient" width="100%" />
@@ -255,7 +271,7 @@ const Exploresection = (props) => {
           width: { xs: "20px", sm: "80px" },
           position: "absolute",
           left: "2%",
-          top: "50%",
+          top: "50%"
         }}
       >
         <img src={ingredient5} alt="ingredient" width="100%" />
@@ -266,7 +282,7 @@ const Exploresection = (props) => {
           width: { xs: "20px", sm: "80px" },
           position: "absolute",
           right: "2%",
-          top: "27%",
+          top: "27%"
         }}
       >
         <img src={ingredient6} alt="ingredient" width="100%" />

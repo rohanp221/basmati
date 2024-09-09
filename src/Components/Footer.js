@@ -19,29 +19,29 @@ const services = [
   {
     id: 1,
     type: "Dine-In",
-    icon: dinein,
+    icon: dinein
   },
   {
     id: 2,
     type: "Catering",
-    icon: catering,
+    icon: catering
   },
   {
     id: 3,
     type: "Take Away",
-    icon: takeaway,
+    icon: takeaway
   },
   {
     id: 4,
     type: "Online Orders",
-    icon: orders,
-  },
+    icon: orders
+  }
 ];
 
 const Footer = () => {
   var date = new Date();
   var yyyy = date.getFullYear();
-  console.log(yyyy);
+
   return (
     <Box
       sx={{
@@ -50,7 +50,7 @@ const Footer = () => {
         backgroundSize: "100% 100%",
         height: "100%",
         position: "relative",
-        mt: 15,
+        mt: 15
       }}
       id="contact"
     >
@@ -58,7 +58,7 @@ const Footer = () => {
         sx={{
           width: "100%",
           position: "absolute",
-          top: -2,
+          top: -2
         }}
       >
         <img src={Footershape} alt="" width="100%" />
@@ -69,13 +69,13 @@ const Footer = () => {
           pt: 5,
           display: "flex",
           flexDirection: "column",
-          justifyContent: "center",
+          justifyContent: "center"
         }}
       >
         <Box
           sx={{
             width: { xs: "40%", sm: "250px" },
-            margin: "0 auto",
+            margin: "0 auto"
           }}
         >
           <img src={basmatilogo} alt="logo" width="100%" />
@@ -88,7 +88,7 @@ const Footer = () => {
               fontSize: { xs: "28px", sm: "32px" },
               fontWeight: "700",
               color: "#492B29",
-              mt: 3,
+              mt: 3
             }}
           >
             Our Services
@@ -99,7 +99,7 @@ const Footer = () => {
               width: { xs: "80%", sm: "70%" },
               gridTemplateColumns: { xs: "1fr 1fr", sm: "1fr 1fr 1fr 1fr" },
               alignItems: "center",
-              margin: "40px auto 60px auto",
+              margin: "40px auto 60px auto"
             }}
           >
             {services.map((service) => (
@@ -108,7 +108,7 @@ const Footer = () => {
                 key={service.id}
                 alignItems="center"
                 sx={{
-                  py: 2,
+                  py: 2
                 }}
               >
                 <Box>
@@ -119,7 +119,7 @@ const Footer = () => {
                     fontSize: "18px",
                     fontFamily: "Chivo",
                     color: "#492B29",
-                    mt: 2,
+                    mt: 2
                   }}
                 >
                   {service.type}
@@ -135,7 +135,7 @@ const Footer = () => {
               margin: "auto",
               display: "flex",
               flexWrap: "wrap",
-              gap: { xs: 2, sm: 0 },
+              gap: { xs: 2, sm: 0 }
             }}
           >
             <Stack
@@ -147,7 +147,7 @@ const Footer = () => {
               <Box
                 sx={{
                   width: { xs: "20px", sm: "28px" },
-                  height: { xs: "20px", sm: "28px" },
+                  height: { xs: "20px", sm: "28px" }
                 }}
               >
                 <img src={calling} alt="contact" width="100%" height="100%" />
@@ -157,7 +157,7 @@ const Footer = () => {
                 sx={{
                   fontFamily: "Chivo",
                   fontSize: { xs: "0.9rem", sm: "1.1rem" },
-                  color: "#fff",
+                  color: "#fff"
                 }}
               >
                 +1 905-556-1609
@@ -172,7 +172,7 @@ const Footer = () => {
               <Box
                 sx={{
                   width: { xs: "20px", sm: "28px" },
-                  height: { xs: "20px", sm: "28px" },
+                  height: { xs: "20px", sm: "28px" }
                 }}
               >
                 <img src={location} alt="contact" width="100%" height="100%" />
@@ -182,7 +182,7 @@ const Footer = () => {
                 sx={{
                   fontFamily: "Chivo",
                   fontSize: { xs: "0.9rem", sm: "1.1rem" },
-                  color: "#fff",
+                  color: "#fff"
                 }}
               >
                 965 Dundas St W #A8 <br /> Whitby, ON L1P 1G8
@@ -197,7 +197,7 @@ const Footer = () => {
               <Box
                 sx={{
                   width: { xs: "20px", sm: "28px" },
-                  height: { xs: "20px", sm: "28px" },
+                  height: { xs: "20px", sm: "28px" }
                 }}
               >
                 <img src={envelope} alt="contact" width="100%" height="100%" />
@@ -207,7 +207,7 @@ const Footer = () => {
                 sx={{
                   fontFamily: "Chivo",
                   fontSize: { xs: "0.9rem", sm: "1.1rem" },
-                  color: "#fff",
+                  color: "#fff"
                 }}
               >
                 info@basmatiindiancuisine.ca
@@ -221,7 +221,7 @@ const Footer = () => {
           sx={{
             fontFamily: "Chivo",
             fontSize: { xs: "0.9rem", sm: "1.1rem" },
-            color: "#fff",
+            color: "#fff"
           }}
         >
           Copyright © <>{yyyy}</>. All Rights Reserved By Basmati | Designed &
@@ -246,7 +246,7 @@ const Footer = () => {
         direction="row"
         spacing={2}
         alignItems="center"
-        sx={{ pb: 12, mr: { xs: 0, sm: 20 } }}
+        sx={{ pb: 2, mr: { xs: 0, sm: 20 } }}
         justifyContent={{ xs: "center", sm: "flex-end" }}
       >
         <Typography
@@ -254,7 +254,7 @@ const Footer = () => {
             fontFamily: "Chivo",
             fontSize: "1.2rem",
             fontWeight: "600",
-            color: "#fff",
+            color: "#fff"
           }}
         >
           Follow us:
@@ -277,8 +277,8 @@ const Footer = () => {
               cursor: "pointer",
               ":hover": {
                 transform: "scale(1.2)",
-                transitionDuration: "0.5s",
-              },
+                transitionDuration: "0.5s"
+              }
             }}
           >
             <FaFacebookF style={{ color: "#fff" }} />
@@ -303,8 +303,8 @@ const Footer = () => {
               cursor: "pointer",
               ":hover": {
                 transform: "scale(1.2)",
-                transitionDuration: "0.5s",
-              },
+                transitionDuration: "0.5s"
+              }
             }}
           >
             <InstagramIcon sx={{ color: "#fff", fontSize: "18px" }} />

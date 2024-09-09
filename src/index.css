@@ -5,6 +5,10 @@ body {
   scroll-behavior: smooth;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 .slick-dots {
   display: none !important;
 }
@@ -86,4 +90,19 @@ span {
   font-family: Chivo;
   font-size: 1.1rem !important;
   font-weight: 600;
+}
+
+.css-heg063-MuiTabs-flexContainer {
+  width: 75% !important;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 749px) {
+  .css-heg063-MuiTabs-flexContainer {
+    width: 100% !important;
+  }
 }

@@ -32,12 +32,6 @@ import MilkShakesMenu from "./milkShakesMenu";
 import LassiMenu from "./lassiMenu";
 
 const menu = [
-  // {
-  //   id: 1,
-  //   category: "Soups",
-  //   menuItems: <SoupsMenu />,
-  //   img: chickensoup
-  // },
   {
     id: 1,
     category: "Appetizers",
@@ -68,65 +62,53 @@ const menu = [
     menuItems: <IndoChineseMenu />,
     img: chickenhakkanoodles
   },
-  // {
-  //   id: 7,
-  //   category: "Weekend Special",
-  //   menuItems: <WeekendSpl />,
-  //   img: palav,
-  // },
   {
     id: 6,
-    category: "Side Orders",
-    menuItems: <SideOrders />,
-    img: naan
-  },
-  // {
-  //   id: 8,
-  //   category: "Deserts",
-  //   menuItems: <DesertsMenu />,
-  //   img: gulabjaamun
-  // },
-  {
-    id: 7,
-    category: "Beverages",
-    menuItems: <BeveragesMenu />,
-    img: beverages
-  },
-  {
-    id: 8,
     category: "Chat Corner",
     menuItems: <ChatCornorMenu />,
     img: Chatcorner
   },
   {
-    id: 9,
-    category: "Snacks",
-    menuItems: <SnacksMenu />,
-    img: Snacks
-  },
-  {
-    id: 10,
+    id: 7,
     category: "Street Splash",
     menuItems: <StreetSplashMenu />,
     img: StreetSplash
   },
   {
-    id: 11,
-    category: "Sweets",
-    menuItems: <SweeteMenu />,
-    img: gulabjaamun
+    id: 8,
+    category: "Snacks",
+    menuItems: <SnacksMenu />,
+    img: Snacks
   },
   {
-    id: 12,
+    id: 9,
+    category: "Side Orders",
+    menuItems: <SideOrders />,
+    img: naan
+  },
+  {
+    id: 10,
     category: "Milk Shakes",
     menuItems: <MilkShakesMenu />,
     img: Milkshake
   },
   {
-    id: 13,
+    id: 11,
     category: "Lassi",
     menuItems: <LassiMenu />,
     img: Lassies
+  },
+  {
+    id: 12,
+    category: "Beverages",
+    menuItems: <BeveragesMenu />,
+    img: beverages
+  },
+  {
+    id: 13,
+    category: "Sweets",
+    menuItems: <SweeteMenu />,
+    img: gulabjaamun
   }
 ];
 

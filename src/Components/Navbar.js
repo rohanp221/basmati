@@ -7,26 +7,26 @@ const navItems = [
     id: 0,
     name: "Home",
     path: "/",
-    tagId: "home",
+    tagId: "home"
   },
   {
     id: 1,
     name: "About",
     path: "/about",
-    tagId: "about",
+    tagId: "about"
   },
   {
     id: 2,
     name: "Menu",
     path: "/menu",
-    tagId: "menu",
+    tagId: "menu"
   },
   {
     id: 3,
     name: "Contact",
     path: "/contact",
-    tagId: "contact",
-  },
+    tagId: "contact"
+  }
 ];
 
 const Navbar = () => {
@@ -42,7 +42,7 @@ const Navbar = () => {
       document.getElementById("mobile_logo") &&
         (document.getElementById("mobile_logo").style.width = "80px");
       document.getElementById("desktop_logo") &&
-        (document.getElementById("desktop_logo").style.width = "160px");
+        (document.getElementById("desktop_logo").style.width = "120px");
     } else {
       document.getElementById("mobile_logo") &&
         (document.getElementById("mobile_logo").style.width = "180px");
@@ -62,13 +62,13 @@ const Navbar = () => {
             color: "#000",
             boxShadow: "0px 0px 0px #EAAB2A",
             backgroundColor: "#EAAB2A",
-            py: 1,
+            py: 1
           }}
         >
           <Toolbar
             sx={{
               display: { xs: "none", sm: "none", md: "flex" },
-              justifyContent: "space-between",
+              justifyContent: "space-between"
             }}
           >
             <Box
@@ -76,7 +76,7 @@ const Navbar = () => {
               style={{
                 width: "280px",
                 transition: "0.5s",
-                ml: 15,
+                padding: "0 0 0 40px"
               }}
             >
               <img src={basmatilogo} alt="logo" width="100%" height="100%" />
@@ -95,14 +95,14 @@ const Navbar = () => {
                       fontWeight: "500",
                       color: "#fff",
                       textTransform: "capitalize",
-                      fontFamily: "Chivo",
+                      fontFamily: "Chivo"
                     }}
                   >
                     <a
                       style={{
                         fontSize: "inherit",
                         color: "inherit",
-                        textDecoration: "none",
+                        textDecoration: "none"
                       }}
                       href={`#${item.tagId}`}
                     >
@@ -132,8 +132,8 @@ const Navbar = () => {
                     textTransform: "capitalize",
                     fontFamily: "Chivo",
                     "&:hover": {
-                      background: "#492B29",
-                    },
+                      background: "#492B29"
+                    }
                   }}
                 >
                   Order Now
@@ -154,7 +154,7 @@ const Navbar = () => {
             alignItems: "center",
             position: "fixed",
             p: { xs: 1, sm: 2 },
-            zIndex: 100000,
+            zIndex: 100000
           }}
         >
           <Box
@@ -162,7 +162,7 @@ const Navbar = () => {
             style={{
               display: { xs: "block", sm: "none" },
               width: "180px",
-              transition: "0.5s",
+              transition: "0.5s"
             }}
           >
             <img src={basmatilogo} alt="logo" width="100%" height="100%" />
@@ -183,8 +183,8 @@ const Navbar = () => {
                 textTransform: "capitalize",
                 fontFamily: "Chivo",
                 "&:hover": {
-                  background: "#492B29",
-                },
+                  background: "#492B29"
+                }
               }}
             >
               Order Now
